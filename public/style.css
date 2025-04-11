@@ -6,31 +6,31 @@ body {
     margin: 0;
     padding: 7em;
     line-height: 1.6;
-    background-color: #1e1e2f; /* Fundo escuro */
-    color: #e4e4f0; /* Texto claro */
+    background-color: #1e1e2f; 
+    color: #e4e4f0; 
   }
 
   html {
     scroll-behavior: smooth;
 }
   
-  /* Header do Site */
+
 .site-header {
-    background: linear-gradient(135deg, #6a0dad, #8a2be2); /* Gradiente do projeto */
+    background: linear-gradient(135deg, #6a0dad, #8a2be2); 
     padding: 15px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil para destaque */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
     position: sticky;
     top: 0;
-    z-index: 100; /* Garante que o header fique acima dos outros elementos */
+    z-index: 100; 
   }
   
-  /* Menu de Navegação */
+
   .navbar .nav-menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centraliza os itens */
+    justify-content: center; 
     align-items: center;
   }
   
@@ -38,22 +38,22 @@ body {
     margin: 0 15px;
   }
   
-  /* Links do Menu */
+
   .navbar .nav-menu li a {
     text-decoration: none;
-    color: #ffffff;  /* Texto branco para contraste com o gradiente */
+    color: #ffffff;  
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
     transition: color 0.3s ease;
   }
   
-  /* Hover no Link */
+
   .navbar .nav-menu li a:hover {
-    color: #e4e4f0; /* Um tom um pouco mais claro, mantendo a leve variação */
+    color: #e4e4f0; 
   }
   
   
-  /* Container da introdução */
+
   .intro-container {
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #6a0dad; /* Borda roxa */
+    border: 3px solid #6a0dad; 
     display: block;
   }
   
@@ -79,12 +79,12 @@ body {
     color: #e4e4f0;
   }
   
-  /* Seções */
+  
   .section {
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 900px;
-    background-color: #29293d; /* Fundo das seções */
+    background-color: #29293d; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
@@ -100,15 +100,15 @@ body {
     color: #e4e4f0;
   }
   
-  /* Grade para currículos */
+
   .resume-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas por linha */
-    gap: 20px; /* Espaço entre os itens */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
   }
   
   .resume-item {
-    background-color: #3a3a5c; /* Fundo do item */
+    background-color: #3a3a5c; 
     padding: 15px;
     border-radius: 8px;
     text-align: center;
@@ -121,9 +121,9 @@ body {
   }
   
   .resume-item img {
-    width: 50px; /* Tamanho do ícone de PDF */
-    height: auto; /* Mantém a proporção */
-    margin-bottom: 10px; /* Espaço abaixo do ícone */
+    width: 50px;
+    height: auto; 
+    margin-bottom: 10px; 
   }
   
   .resume-item p {
@@ -134,8 +134,8 @@ body {
   }
   
   .resume-item:hover {
-    transform: translateY(-5px); /* Eleva ao passar o mouse */
-    background-color: #4b4b71; /* Fundo mais claro ao hover */
+    transform: translateY(-5px); 
+    background-color: #4b4b71; 
   }
   
   
@@ -148,39 +148,39 @@ body {
   }
   
   .card {
-    flex: 1 1 calc(50% - 20px); /* Ajusta o tamanho do card para ocupar mais espaço */
-    background-color: #3a3a5c; /* Fundo do card */
-    border-radius: 12px; /* Bordas mais arredondadas */
-    padding: 30px; /* Aumenta o espaço interno */
+    flex: 1 1 calc(50% - 20px); 
+    background-color: #3a3a5c; 
+    border-radius: 12px; 
+    padding: 30px; 
     text-align: center;
     color: #e4e4f0;
     transition: transform 0.3s, box-shadow 0.3s;
-    max-width: 400px; /* Define um tamanho máximo para o card */
-    margin: 0 auto; /* Centraliza o card */
+    max-width: 400px; 
+    margin: 0 auto; 
   }
-  
+
   .card img {
-    width: 200px; /* Aumenta a largura da imagem */
-    height: 200px; /* Aumenta a altura da imagem */
-    border-radius: 50%; /* Mantém a imagem circular */
-    border: 4px solid #6a0dad; /* Borda roxa */
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    border: 4px solid #6a0dad; 
     display: block;
-    margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaço abaixo */
-    object-fit: cover; /* Garante que a imagem preencha o círculo */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil */
+    margin: 0 auto 20px; 
+    object-fit: cover; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
   }
   
   
   
   .card:hover {
-    transform: translateY(-5px) scale(1.05); /* Efeito de destaque ao passar o mouse */
-    background-color: #4b4b71; /* Ajusta o fundo ao hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+    transform: translateY(-5px) scale(1.05); 
+    background-color: #4b4b71; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
   }
   
   .card h3 {
-    margin-top: 15px; /* Dá mais espaço após a imagem */
-    font-size: 1.6rem; /* Tamanho maior para o título */
+    margin-top: 15px; 
+    font-size: 1.6rem; 
     color: #d1a3ff;
   }
   
@@ -188,10 +188,10 @@ body {
     margin-top: 10px;
     font-size: 1rem;
     color: #e4e4f0;
-    line-height: 1.4; /* Melhora a legibilidade */
+    line-height: 1.4; 
   }
   
-  /* Formulário */
+
   .form {
     display: flex;
     flex-direction: column;
@@ -218,23 +218,23 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, transform 0.2s; /* Adicionado efeito no botão */
+    transition: background-color 0.3s ease-in-out, transform 0.2s; 
   }
   
   .button:hover {
     background-color: #8a2be2;
-    transform: translateY(-3px); /* Botão sobe ligeiramente */
+    transform: translateY(-3px); 
   }
   
   .card img:hover {
-    transform: scale(1.1); /* Amplia levemente a imagem ao passar o mouse */
-    transition: transform 0.3s ease; /* Suaviza o efeito */
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
   }
   
   .pdf-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas por linha */
-    gap: 20px; /* Espaçamento entre os PDFs */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
   }
   
   .pdf-item {
@@ -246,10 +246,10 @@ body {
   }
   
   .pdf-item iframe {
-    width: 100%; /* Ajusta a largura para ocupar todo o espaço do item */
-    height: 300px; /* Altura fixa para visualização confortável */
-    border: none; /* Remove bordas padrão */
-    border-radius: 8px; /* Bordas arredondadas */
+    width: 100%; 
+    height: 300px; 
+    border: none; 
+    border-radius: 8px; 
   }
   
   .pdf-item p {
@@ -267,13 +267,12 @@ body {
     color: #ffffff;
   }
 
-  /* Estilização da Seção de Habilidades */
+
 #habilidades {
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 900px;
-    background-color: #29293d; /* Fundo coerente com outras seções */
-    border-radius: 10px;
+    background-color: #29293d; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
@@ -292,7 +291,7 @@ body {
   }
   
   .habilidades-box {
-    background-color: #3a3a5c; /* Fundo dos "cards" de habilidades */
+    background-color: #3a3a5c; 
     padding: 20px;
     flex: 1;
     min-width: 280px;

@@ -4,9 +4,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-console.log("Script carregado com sucesso!"); // Log para depuração
+console.log("Script carregado com sucesso!"); 
 
-// GSAP: Animação de cabeçalho
+
 gsap.from('.header', {
   duration: 1.5,
   opacity: 0,
@@ -14,7 +14,7 @@ gsap.from('.header', {
   ease: 'power2.out',
 });
 
-// GSAP: Animação dos cards
+
 gsap.from('.card', {
   scrollTrigger: {
     trigger: '.card',
@@ -29,7 +29,7 @@ gsap.from('.card', {
   stagger: 0.2,
 });
 
-// ScrollReveal: Configuração para seções
+
 ScrollReveal().reveal('.section', {
   duration: 1000,
   origin: 'bottom',
