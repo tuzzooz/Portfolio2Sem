@@ -1,4 +1,3 @@
-/* Estilo geral */
 body {
     font-family: 'Poppins', sans-serif;
     max-height: max-content; 
@@ -41,16 +40,16 @@ body {
 
   .navbar .nav-menu li a {
     text-decoration: none;
-    color: #ffffff;  
+    color: #ffffff;
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
     transition: color 0.3s ease;
   }
   
-
   .navbar .nav-menu li a:hover {
-    color: #e4e4f0; 
+    color: #8a2be2;
   }
+  
   
   
 
@@ -71,19 +70,21 @@ body {
   .intro-text h2 {
     font-size: 1.8rem;
     color: #d1a3ff;
+
   }
   
   .intro-text p {
     font-size: 1rem;
     line-height: 1.6;
     color: #e4e4f0;
+    text-align:left;
   }
   
   
   .section {
     padding: 40px 20px;
     margin: 20px auto;
-    max-width: 900px;
+    max-width: 100%;
     background-color: #29293d; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -98,6 +99,7 @@ body {
   .section p {
     font-size: 1rem;
     color: #e4e4f0;
+    text-align: justify;
   }
   
 
@@ -139,12 +141,12 @@ body {
   }
   
   
-  /* Grid de projetos */
+  
   .grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
   }
   
   .card {
@@ -155,7 +157,8 @@ body {
     text-align: center;
     color: #e4e4f0;
     transition: transform 0.3s, box-shadow 0.3s;
-    max-width: 400px; 
+    max-width: 600px; 
+    width: 100%;
     margin: 0 auto; 
   }
 
@@ -188,7 +191,8 @@ body {
     margin-top: 10px;
     font-size: 1rem;
     color: #e4e4f0;
-    line-height: 1.4; 
+    line-height: 1.4;
+    text-align: justify; 
   }
   
 
@@ -271,7 +275,7 @@ body {
 #habilidades {
     padding: 40px 20px;
     margin: 20px auto;
-    max-width: 900px;
+    max-width: 100%;
     background-color: #29293d; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
@@ -294,11 +298,13 @@ body {
     background-color: #3a3a5c; 
     padding: 20px;
     flex: 1;
+    width: 100%;
     min-width: 280px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #e4e4f0;
     transition: transform 0.3s ease;
+    
   }
   
   .habilidades-box:hover {
@@ -325,3 +331,20 @@ body {
     line-height: 1.5;
   }
   
+  .icones-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 120px;
+  }
+  
+  .icones-contato a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .icones-contato a:hover {
+    color: #0077b5;
+  }
