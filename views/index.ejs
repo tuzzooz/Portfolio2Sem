@@ -62,22 +62,17 @@
       
 
     <section class="section" id="projetos">
-      <h2>Projetos</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Site de Vereadores | API 1 SEM | 2024</h3>
-          <p>Consiste em um site que transforma dados da prefeitura em informações interativas sobre os vereadores da
-            cidade, incluindo proposições realizadas, assiduidade, participação em comissões e avaliação do mandato pelos
-            cidadãos.</p>
-            <a href="https://github.com/nicolygz/the-devs-department" class="linkprojeto">➞ GitHub do projeto</a>
-        </div>
-        <div class="card">
-          <h3>Dashboard - Helpnei | API 2 SEM | 2025</h3>
-          <p>Desenvolvimento de dashboard de indicadores para a empresa Helpnei, com foco no monitoramento de   métricas de lojas, usuários e transações. </p>
-          <a href="https://github.com/the-devs-department/helpnei" class="linkprojeto">➞ GitHub do projeto</a>
-        </div>
-      </div>
-    </section>
+    <h2>Projetos</h2>
+    <div class="grid">
+        <% projetos.forEach(projeto => { %>
+            <div class="card">
+                <h3><%= projeto.nome %></h3>
+                <p><%= projeto.descricao %></p>
+                <a href="<%= projeto.url %>" class="linkprojeto">➞ GitHub do projeto</a>
+            </div>
+        <% }); %>
+    </div>
+</section>
 
     <section class="section" id="habilidades">
         <h2>Habilidades</h2>
