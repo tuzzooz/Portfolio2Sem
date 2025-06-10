@@ -1,0 +1,12 @@
+<section class="section" id="projetos">
+    <h2>Projetos</h2>
+    <div class="grid">
+        <% projetos.forEach(projeto => { %>
+            <div class="card">
+                <h3><%= projeto.nome %></h3>
+                <p><%= projeto.descricao %></p>
+                <a href="<%= projeto.url %>" class="linkprojeto">➞ GitHub do projeto</a>
+            </div>
+        <% }); %>
+    </div>
+</section>

@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Otávio | Desenvolvedor</title>
-  <link rel="stylesheet" href="/style.css">
-  <script src="/js/scripts.js"></script>
-  <link rel="icon" type="image/png" href="images/ace6a557671876677cedbd2e3a13be56.jpg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script type="module" src="/js/scripts.js"></script>
-
-</head>
-<body>
-
-    <header>
-        <nav class="navbar">
-          <ul class="nav-menu">
-            <li><a href="#curriculo">Currículo</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#trabalhos">Trabalhos</a></li>
-            <li><a href="#Certificações">Certificações</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
-      </header>
+<%- include('partials/header') %>
   <br>
 
   <main>
@@ -61,18 +35,7 @@
       
       
 
-    <section class="section" id="projetos">
-    <h2>Projetos</h2>
-    <div class="grid">
-        <% projetos.forEach(projeto => { %>
-            <div class="card">
-                <h3><%= projeto.nome %></h3>
-                <p><%= projeto.descricao %></p>
-                <a href="<%= projeto.url %>" class="linkprojeto">➞ GitHub do projeto</a>
-            </div>
-        <% }); %>
-    </div>
-</section>
+    <%- include('projetos.ejs') %>
 
     <section class="section" id="habilidades">
         <h2>Habilidades</h2>
@@ -142,24 +105,4 @@
         
         <br>
         
-        <section class="section" id="contato">
-          <h2>Contato</h2>
-          <div class="icones-contato">
-            <a href="mailto:otavioviannalima@gmail.com" target="_blank" title="Email">
-              <i class="fas fa-envelope fa-10x"></i>
-            </a>
-            <a href="www.linkedin.com/in/otávio-vianna-lima-1b26a932a" target="_blank" title="LinkedIn">
-              <i class="fab fa-linkedin fa-10x"></i>
-            </a>
-            <a href="https://github.com/tuzzooz" target="_blank" title="GitHub">
-              <i class="fab fa-github fa-10x"></i>
-            </a>
-          </div>
-        </section>
-        
-  </main>
-  
-
-  <script src="/js/scripts.js"></script>
-</body>
-</html>
+<%- include('partials/footer') %>
